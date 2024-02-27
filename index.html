@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 	<head>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
 		<meta charset="UTF-8" />
 		<meta
 			name="desciption"
@@ -15,13 +19,32 @@
 		<header>
 			<nav>
 				<span class="logo">Caffeteria</span>
-				<ul class="menu">
-					<li><a>Home</a></li>
+				<ul class="sidebar">
+					<li class="sidebar_close">
+						<a>
+							<span class="material-symbols-outlined">
+								close
+							</span></a
+						>
+					</li>
 					<li><a>Receitas</a></li>
 					<li><a>Novidades</a></li>
 					<li><a>Melhor alaviadas</a></li>
 				</ul>
-				<a class="github">GitHub</a>
+				<ul class="menu">
+					<li class="hideOnMobile"><a>Home</a></li>
+					<li class="hideOnMobile"><a>Receitas</a></li>
+					<li class="hideOnMobile"><a>Novidades</a></li>
+					<li class="hideOnMobile"><a>Melhor alaviadas</a></li>
+					<li class="dropdown-menu">
+						<a
+							><span class="material-symbols-outlined">
+								menu
+							</span></a
+						>
+					</li>
+				</ul>
+				<a class="github hideOnMobile">GitHub</a>
 			</nav>
 		</header>
 
@@ -191,5 +214,7 @@
 			<p class="footer-copy">Copyright &lt;CODEFEE /&gt; 2024</p>
 			<p class="footer-autor">Feito com muito ❤ e café por Luiz Felipe</p>
 		</footer>
+
+		<script src="app.js"></script>
 	</body>
 </html>
